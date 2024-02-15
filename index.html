@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+  <title>Bcard</title>
+  <style>
+ body {
+  background: rgb(250, 250, 250); 
+  display: flex;
+  justify-content: space-around;
+  padding: 10vh 10vw;
+  font-family: 'inter', sans-serif;
+}
+.contact-options {
+  display: flex;
+  flex-flow: column;
+  background-color: #222;
+  color: #fff;
+  border-radius: 2%;
+  box-shadow: 0px 3px  15px rgb(49, 49, 49);
+  border-bottom:2px solid cornflowerblue;
+}
+.contact-options .photo img {
+  width: 100%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+.contact-options h2 {
+  text-align: center;
+}
+.contact-options  p{
+  text-align: center;
+  font-size: .8em;
+}
+.contact-options .details, .social-links {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding: 1vh 0;
+  gap: 30px;
+}
+.details a:hover {
+  scale: 1.5;
+  transition: all ease-in-out .5s;
+}
+.social-links a:hover {
+  scale: 1.5;
+  transition: all ease-in-out .5s;
+}
+.footer p {
+  font-size: .7em;
+  text-align: center;
+  font-weight: 100;
+  padding: .8vh 0;
+  /* background-color: cornflowerblue; */
+  color:#ffffff;
+}
+hr {
+  border: none;
+  border-top: 1px solid rgb(203, 203, 203);
+  width: 20vw;
+  opacity: .3;
+}
+@media only screen and (max-width: 600px) {
+body {
+  padding: 10vh 2vw;
+}
+}
+  </style>
+</head>
+<body>
+    <div class="contact-options">
+      <div class="photo">
+        <img src="assets/Profile-400x400.jpg"  alt="my photo">
+      </div>
+     <h2>Amresh Kanna</h2>
+      <div class="details">
+        <a href="tel:+919700989588">
+          <img src="assets/SVG/accept-call-icon.svg" target="_blank" height="25" width="25"  alt="accept-call-icon">
+         </a>
+        <a href="http://wa.me/9700989588">
+          <img src="assets/SVG/whatsapp-color-icon.svg"target="_blank" height="25" width="25"  alt="whatsapp-color-icon">
+        </a>
+        <a href="mailto:amreshkanna1@gmail.com">
+          <img src="assets/SVG/gmail-icon.svg" target="_blank" height="25" width="25"  alt="gmail-icon">
+        </a>
+        <a href="https://www.amreshkanna.com">
+          <img src="assets/SVG/link-icon.svg" target="_blank" height="25" width="25"  alt="website">
+        </a>
+        <a href="https://github.com/Amreshkanna1">
+          <img src="assets/SVG/github-icon.svg" target="_blank" height="25" width="25"  alt="website">
+        </a>
+      </div>
+      <hr>
+<p>A sneak peak on social media accounts:</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/amreshkanna/">
+          <img src="assets/SVG/linkedin-app-icon.svg" target="_blank" height="25" width="25"  alt="linkedin">
+        </a>
+        <a href="https://www.instagram.com/ak_designs_01/">
+          <img src="assets/SVG/ig-instagram-icon.svg" target="_blank" height="25" width="25"  alt="instagram">
+        </a>
+        <a href=" https://www.behance.net/amreshkanna">
+          <img src="assets/SVG/behance-square-color-icon.svg"  target="_blank" height="25" width="25"  alt="Behance">
+        </a>
+      </div>
+      <div class="footer">
+        <p>Designed by Amresh Kanna</p>
+      </div>
+    </div>
+</body>
+</html>
