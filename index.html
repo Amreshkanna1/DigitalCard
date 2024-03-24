@@ -11,108 +11,111 @@
   <title>Bcard</title>
   <style>
  body {
-  background: rgb(250, 250, 250); 
+  background: grey; 
   display: flex;
   justify-content: space-around;
   padding: 10vh 10vw;
   font-family: 'inter', sans-serif;
 }
-.contact-options {
+.container {
   display: flex;
   flex-flow: column;
-  background-color: #222;
-  color: #fff;
-  border-radius: 2%;
+  height: 680px;
+  width: 400px;
+  font-family: "inter" sans-serif;
+  color:whitesmoke;
+
   box-shadow: 0px 3px  15px rgb(49, 49, 49);
-  border-bottom:2px solid cornflowerblue;
+    /* background: rgba(255, 255, 255, 0.2); */
+    background: rgba(100, 148, 237, 0.122);
+    border-radius: 16px;
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) ; 
+    /* box-shadow: 0 4px 30px rgba(100, 148, 237, 0.122); */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid cornflowerblue;
 }
-.contact-options .photo img {
-  width: 100%;
-  border-top-left-radius: 2%;
-  border-top-right-radius: 2%;
+.carousel{
+  width: auto;
+  height: 400px;
 }
-.contact-options h2 {
+.carousel img {
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  filter: contrast(110%);
+  border-bottom: 2px dashed cornflowerblue; 
+}
+.info {
+  height: 280px;
   text-align: center;
 }
-.contact-options  p{
+.info  p{
   text-align: center;
   font-size: .8em;
 }
-.contact-options .details, .social-links {
+.info .details, .social-links {
   display: flex;
   flex-flow: row;
   justify-content: center;
   padding: 1vh 0;
   gap: 30px;
 }
-.details a:hover {
-  scale: 1.5;
-  transition: all ease-in-out .5s;
-}
-.social-links a:hover {
-  scale: 1.5;
-  transition: all ease-in-out .5s;
-}
+
 .footer p {
   font-size: .7em;
-  text-align: center;
   font-weight: 100;
-  padding: .8vh 0;
-  /* background-color: cornflowerblue; */
-  color:#ffffff;
 }
-hr {
-  border: none;
-  border-top: 1px solid rgb(203, 203, 203);
-  width: 20vw;
-  opacity: .3;
-}
-@media only screen and (max-width: 600px) {
+/* animations */
+
+ @media only screen and (max-width: 600px) {
 body {
-  padding: 0vh 2vw;
+  padding: 2vh 0vw;
 }
-}
+} 
   </style>
 </head>
 <body>
-    <div class="contact-options">
-      <div class="photo">
-        <img src="assets/Profile-400x400.jpg"  alt="my photo">
+    <div class="container">
+      <div class="carousel">
+        <img src="assets/Profile-400x400.webp"  alt="my photo"> 
       </div>
-     <h2>Amresh Bandi</h2>
+      <div class="info">
+     <h1>Amresh Kanna</h1>
+     <p>Hey there! Let's connect now...</p>
       <div class="details">
         <a href="tel:+919700989588" target="_blank">
-          <img src="assets/SVG/accept-call-icon.svg"  height="25" width="25"  alt="accept-call-icon">
+          <img src="assets/Call icon.gif"  height="28" width="28"  alt="call to amresh">
          </a>
         <a href="http://wa.me/+919700989588?text=Hi%20Maverick!%0AWass%20up!" target="_blank">
-          <img src="assets/SVG/whatsapp-color-icon.svg" height="25" width="25"  alt="whatsapp-color-icon">
+          <img src="assets/whatsapp.gif" height="28" width="29"  alt="text /message">
         </a>
         <a href="mailto:amreshkanna1@gmail.com" target="_blank">
-          <img src="assets/SVG/gmail-icon.svg"  height="25" width="25"  alt="gmail-icon">
+          <img src="assets/email.gif"  height="28" width="28"  alt="email">
         </a>
         <a href="https://www.amreshkanna.com" target="_blank">
-          <img src="assets/SVG/link-icon.svg"  height="25" width="25"  alt="website">
+          <img src="assets/search.gif"  height="28" width="28"  alt="website">
         </a>
         <a href="https://github.com/Amreshkanna1" target="_blank">
-          <img src="assets/SVG/github-icon.svg"  height="25" width="25"  alt="website">
+          <img src="assets/code.gif"  height="29" width="29"  alt="github">
         </a>
       </div>
-      <hr>
-<p>A sneak peak on social media accounts:</p>
+    
+<p>A sneak peak on network profiles</p>
       <div class="social-links">
         <a href="https://www.linkedin.com/in/amreshkanna/" target="_blank">
-          <img src="assets/SVG/linkedin-app-icon.svg"  height="25" width="25"  alt="linkedin">
+          <img src="assets/icons8-linkedin.svg"  height="30" width="30"  alt="linkedin">
         </a>
         <a href="https://www.instagram.com/amresh_kanna/" target="_blank">
-          <img src="assets/SVG/ig-instagram-icon.svg"  height="25" width="25"  alt="instagram">
+          <img src="assets/icons8-instagram.svg"  height="30" width="30"  alt="instagram">
         </a>
         <a href=" https://www.behance.net/amreshkanna" target="_blank">
-          <img src="assets/SVG/behance-square-color-icon.svg"   height="25" width="25"  alt="Behance">
+          <img src="assets/icons8-behance.svg"   height="30" width="30"  alt="Behance">
         </a>
       </div>
       <div class="footer">
-        <p>Designed by Amresh Kanna</p>
+        <!-- <p>Designed by Amresh Kanna</p> -->
       </div>
     </div>
+  </div>
 </body>
 </html>
